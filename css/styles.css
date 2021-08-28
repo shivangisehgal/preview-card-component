@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+  --darkcyan: hsl(185, 75%, 39%);
+  --verydarkdesaturatedblue: hsl(229, 23%, 23%);
+  --darkgrayishblue: hsl(227, 10%, 46%);
+}
+
+*, *:after, *:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Kumbh Sans';
+}
+
+body {
+  background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+  background-color: var(--darkcyan);
+  background-position: -68% 190%, 160% -125%;
+  background-repeat: no-repeat, no-repeat;
+  font-family: 'Kumbh Sans';
+  text-align: center;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h3 {
+  color: var(--verydarkdesaturatedblue);
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+h3 span {
+  color: var(--darkgrayishblue);
+  font-weight: 400;
+}
+
+p, h4 {
+  color: var(--darkgrayishblue);
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 15px;
+}
+
+p {
+  font-size: 10px;
+  line-height: 1;
+  letter-spacing: 1.5px;
+}
+
+hr {
+  margin: 20px 0 0;
+  border-color: hsl(0, 0%, 90%);
+}
+
+.card-img-top {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.profile {
+  border: 5px solid #fff;
+  border-radius: 100%;
+}
+
+.card {
+  width: 350px;
+  height: 380px;
+  border-radius: 15px;
+  background-color: #fff;
+  position: absolute;
+  box-shadow: 0 40px 40px 0 rgba(0, 0, 0, 0.15);
+}
+
+.card-body {
+  padding: 0;
+}
+
+.contents, .profile {
+  position: relative;
+  bottom: 55px;
+}
+
+.attribution {
+  font-size: 15px;
+  text-align: center;
+  color: white;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: var(--verydarkdesaturatedblue);
+}
+
+.attribution a:hover {
+  text-decoration: underline;
+  text-decoration-color: white;
+  color: var(--verydarkdesaturatedblue);
+}
+
+.stats {
+  padding: 20px 30px;
+  position: relative;
+  bottom: 10px;
+}
+
+@media (max-width: 970px) {
+  body {
+    background-position: 140% 190%, -50% -75%;
+  }
+}
